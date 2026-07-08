@@ -1114,7 +1114,7 @@ app.get('/luck8-hu', async (req, res) => {
     const result = calculateAdvancedPrediction(data, 'hu');
     savePredictionToHistory('hu', nextPhien, result.prediction, result.confidence);
     recordPrediction('hu', nextPhien, result.prediction, result.confidence, result.factors);
-    res.json({ phien_hien_tai: nextPhien.toString(), du_doan: normalizeResult(result.prediction), ti_le: `${result.confidence}%`, id: '@tiendataox' });
+    res.json({ phien_hien_tai: nextPhien.toString(), du_doan: normalizeResult(result.prediction), ti_le: `${result.confidence}%`, id: '@vanminh2603' });
   } catch (error) { console.error('Error:', error); res.status(500).json({ error: 'Lỗi server' }); }
 });
 
@@ -1128,7 +1128,7 @@ app.get('/luck8-md5', async (req, res) => {
     const result = calculateAdvancedPrediction(data, 'md5');
     savePredictionToHistory('md5', nextPhien, result.prediction, result.confidence);
     recordPrediction('md5', nextPhien, result.prediction, result.confidence, result.factors);
-    res.json({ phien_hien_tai: nextPhien.toString(), du_doan: normalizeResult(result.prediction), ti_le: `${result.confidence}%`, id: '@tiendataox' });
+    res.json({ phien_hien_tai: nextPhien.toString(), du_doan: normalizeResult(result.prediction), ti_le: `${result.confidence}%`, id: '@vanminh2603' });
   } catch (error) { console.error('Error:', error); res.status(500).json({ error: 'Lỗi server' }); }
 });
 
